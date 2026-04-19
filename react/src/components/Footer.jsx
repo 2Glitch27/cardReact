@@ -1,15 +1,11 @@
 
-export default function Footer() {
+export default function Footer({name, children}) {
   return (
     <div className="bg-[#232536] text-white px-20">
     <div className="flex items-center justify-between py-14">
-        <div>Finsweet</div>
+        <div>{name}</div>
         <ul className="flex gap-4">
-            <li><a href="#">Home</a></li>
-            <li><a href="#">Blog</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Contact us</a></li>
-            <li><a href="#">Privacy Policy</a></li>
+           {children}
         </ul>
     </div>
     <div className="bg-[#4C4C4C] flex justify-between py-20 px-14">

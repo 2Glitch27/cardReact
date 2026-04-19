@@ -24,7 +24,14 @@ function App() {
   return (
     <>
     <div className='max-w-7xl w-full mx-auto'>
-      <Header/>
+      <Header name="Finsweet">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><button className="py-4 px-12 text-black bg-amber-50">Subscribe</button></li>
+      </Header>
+
       <div className='grid grid-cols-4 justify-items-center p-5 w-full gap-7 px-20' >
         {
           products.map((product)=>(
@@ -36,7 +43,13 @@ function App() {
       {
           info && <Modal key={info.id} title={info.title} price={info.price} img={info.img} desc={info.desc} onClick={()=> setInfo(null)}/>
         }
-      <Footer/>
+      <Footer name="Finsweet">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">About Us</a></li>
+          <li><a href="#">Contact us</a></li>
+          <li><a href="#">Privacy Policy</a></li>
+        </Footer>
     </div>
     </>
   )
