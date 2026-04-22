@@ -32,7 +32,7 @@ function App() {
           <li><button className="py-4 px-12 text-black bg-amber-50">Subscribe</button></li>
       </Header>
 
-      <div className='grid grid-cols-4 justify-items-center p-5 w-full gap-7 px-20' >
+      <div className='grid grid-cols-4 justify-items-center py-20 w-full gap-7 px-20' >
         {
           products.map((product)=>(
           <Card key={product.id} title={product.title} price={product.price} img={product.img} onClick={()=> setInfo(product)}/>

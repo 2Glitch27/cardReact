@@ -13,7 +13,7 @@ export default function Modal({title, price, img, desc, onClick}) {
             <div className="h-90 w-90 flex items-center justify-cente">
                 <img src={img} alt="" className="w-full h-full object-cover" />
             </div>
-            <div className="px-7 max-w-[400px] flex flex-col">
+            <div className="px-7 max-w-100 flex flex-col">
                 <div>
                     <div className="py-7 min-w-0 flex justify-between items-center">
                     {title}

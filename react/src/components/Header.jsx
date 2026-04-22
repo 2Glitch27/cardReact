@@ -8,7 +8,6 @@ export default function Header({name, children }) {
       <div>
         <ul className="flex gap-6 items-center">
           {children}
-          
         </ul>
       </div>
     </div>
